@@ -1,4 +1,4 @@
-class Card {
+export class Card {
 
   static markup = `
   <div class="place-card">
