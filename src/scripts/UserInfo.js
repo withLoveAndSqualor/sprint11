@@ -1,4 +1,4 @@
-class UserInfo{
+export class UserInfo{
   constructor(nameString, jobString, photoElement, nameInput, jobInput){
     this.nameString = nameString;
     this.jobString = jobString;
@@ -17,13 +17,6 @@ class UserInfo{
     this.jobString.textContent = res.about;
     this.photoElement.setAttribute('style', `background-image: url(${res.avatar})`);
   }
-
-  /*getUserInfo = () => {
-    return{
-      name: this.name,
-      job: this.job
-    }
-  }*/
 
   updateUserInfo = () => {
     this.nameString.textContent = this.nameInput.value;
