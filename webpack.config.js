@@ -25,7 +25,11 @@ module.exports = {
         test: /\.css$/i,
         use: [
           (isDev ? 'style-loader' : MiniCssExtractPlugin.loader),
-          'css-loader',
+          {loader: 'css-loader',
+          options: {
+            importLoaders: 2
+            } 
+          },
           'postcss-loader'
         ]
       },
@@ -69,6 +73,7 @@ module.exports = {
     }),
     new webpack.DefinePlugin({
       'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
-    })
+    }),
+    new WebpackMd5Hash()
   ]
 }
