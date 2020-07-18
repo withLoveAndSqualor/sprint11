@@ -1,4 +1,4 @@
 /node_modules
 /dist
-/src/.idea
-/src/.vscode
+./src/.idea
+./src/.vscode
