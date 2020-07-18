@@ -2,3 +2,4 @@
 /dist
 ./src/.idea
 ./src/.vscode
+*.DS_Store
