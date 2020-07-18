@@ -1,5 +1,6 @@
-/node_modules
-/dist
-./src/.idea
-./src/.vscode
-./src/*.DS_Store
+src/.DS_Store
+src/.idea/
+src/.vscode/
+src/images/.DS_Store
+dist/
+node_modules/
