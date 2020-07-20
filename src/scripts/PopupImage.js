@@ -1,4 +1,4 @@
-class PopupImage {
+export class PopupImage {
   constructor (elem, placesList){
     this.elem = elem;
     this.placesList = placesList;

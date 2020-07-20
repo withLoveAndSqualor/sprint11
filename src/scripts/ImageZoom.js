@@ -1,4 +1,4 @@
-class ImageZoom {
+export class ImageZoom {
 
   static markupZoom = `
   <div class="image-zoom">
@@ -21,13 +21,6 @@ class ImageZoom {
     zoomCross.addEventListener('click', this.closeZoom);
     return this.zoom;
   }
-
-  /*openZoom = (link) => {
-    const newZoom = this.createZoom();
-    this.container.append(newZoom);
-    const imageZoomPic = newZoom.querySelector('.image-zoom__picture');
-    imageZoomPic.setAttribute('src', link);
-  }*/
 
   closeZoom = () => {
     this.zoom.remove();
